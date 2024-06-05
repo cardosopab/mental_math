@@ -1,4 +1,3 @@
-// lib/cubit/complement_cubit.dart
 import 'package:bloc/bloc.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
@@ -14,8 +13,9 @@ class ComplementState {
 
 class ComplementCubit extends Cubit<ComplementState> {
   int? previousNumber;
+  final BuildContext context;
 
-  ComplementCubit() : super(ComplementState(0, [], 0, List.filled(3, Colors.blue))) {
+  ComplementCubit(this.context) : super(ComplementState(0, [], 0, [])) {
     generateNewQuestion();
   }
 
@@ -42,7 +42,10 @@ class ComplementCubit extends Cubit<ComplementState> {
 
     options.shuffle(); // Shuffle the options
 
-    emit(ComplementState(number, options, correctOption, List.filled(3, Colors.blue)));
+    // Get the button color from the theme
+    Color buttonColor = Theme.of(context).elevatedButtonTheme.style?.backgroundColor?.resolve({}) ?? Colors.blueGrey;
+
+    emit(ComplementState(number, options, correctOption, List.filled(3, buttonColor)));
   }
 
   void checkAnswer(int index) {

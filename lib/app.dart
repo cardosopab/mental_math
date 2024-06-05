@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:mental_math/complement/view/complement_page.dart';
+import 'package:mentis_math/home/view/home_page.dart';
+import 'package:mentis_math/theme.dart';
 
-/// {@template MentalMath_app}
-/// A [MaterialApp] which sets the `home` to [MentalMathPage].
+/// {@template MentisMath_app}
+/// A [MaterialApp] which sets the `home` to [MentisMathPage].
 /// {@endtemplate}
-class MentalMathApp extends MaterialApp {
-  /// {@macro MentalMath_app}
-  const MentalMathApp({super.key}) : super(home: const ComplementPage());
+class MentisMathApp extends StatelessWidget {
+  /// {@macro MentisMath_app}
+  const MentisMathApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mentis Math',
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      themeMode: ThemeMode.system,
+      home: const HomePage(),
+    );
+  }
 }
