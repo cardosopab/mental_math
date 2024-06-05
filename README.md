@@ -1,10 +1,10 @@
 # Mentis Math
 
-Mentis Math is a Flutter-based educational app designed to enhance your mental math skills. As of version 1.0.0, the app features the "Complements" game, which helps users practice finding complementary numbers.
+Mentis Math is a Flutter-based educational app designed to enhance your mental math skills. As of version 1.0.0, the app features the "Complements" exercise, which helps users practice finding complementary numbers.
 
 ## Features
 
-- Complements Game: Improve your ability to find complementary numbers that add up to 10.
+- Complements exercise: Improve your ability to find complementary numbers that add up to 10.
 
 - Responsive Theme: The app supports both light and dark modes, adapting to your system settings.
 
