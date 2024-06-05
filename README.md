@@ -1,16 +1,52 @@
-# mental_math
+# Mentis Math
 
-A new Flutter project.
+Mentis Math is a Flutter-based educational app designed to enhance your mental math skills. As of version 1.0.0, the app features the "Complements" game, which helps users practice finding complementary numbers.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Complements Game: Improve your ability to find complementary numbers that add up to 10.
 
-A few resources to get you started if this is your first Flutter project:
+- Responsive Theme: The app supports both light and dark modes, adapting to your system settings.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Clean and Intuitive UI: Simple and easy-to-use interface for a seamless user experience.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+### Download the repo:
+
+```bash
+git clone https://github.com/cardosopab/mental_math.git
+cd mental_math
+```
+
+### Install dependencies:
+
+```bash
+flutter pub get
+```
+
+### Run the app:
+
+```bash
+flutter run
+```
+
+## Development
+
+The Mentis Math app uses the BLoC (Business Logic Component) pattern and Cubits to manage state for several reasons:
+
+- Separation of Concerns: BLoC helps in separating business logic from UI components, making the codebase more modular and easier to manage.
+
+- Predictable State Management: By using Cubits, which are a simpler version of BLoC, we maintain predictable and manageable state transitions, making the app more reliable.
+
+- Scalability: BLoC is well-suited for handling complex state management scenarios, which can be beneficial as the app grows in functionality.
+
+## License
+
+This project is licensed under the GNU GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Flutter Dart and BLoC teams for providing excellent tools and documentation.
+
+- The open-source community for their contributions and support.
