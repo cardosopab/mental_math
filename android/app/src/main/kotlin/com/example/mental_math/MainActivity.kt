@@ -1,4 +1,4 @@
-package com.example.mentis_math
+package com.cardosopab.mentis_math
 
 import io.flutter.embedding.android.FlutterActivity
 
