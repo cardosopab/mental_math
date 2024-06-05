@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mental_math/complement/cubit/complement_cubit.dart';
+import 'package:mentis_math/complement/cubit/complement_cubit.dart';
 
 class ComplementView extends StatelessWidget {
   const ComplementView({super.key});
@@ -9,7 +9,9 @@ class ComplementView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Complement Practice'),
+        title: const Text(
+          'Complement Practice',
+        ),
       ),
       body: BlocBuilder<ComplementCubit, ComplementState>(
         builder: (context, state) {
@@ -41,7 +43,6 @@ class ComplementView extends StatelessWidget {
                           },
                           child: Text(
                             '${state.options[index]}',
-                            style: const TextStyle(color: Colors.white),
                           ),
                         ),
                       );

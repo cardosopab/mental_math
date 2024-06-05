@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mental_math/complement/cubit/complement_cubit.dart';
-import 'package:mental_math/complement/view/complement_view.dart';
+import 'package:mentis_math/complement/cubit/complement_cubit.dart';
+import 'package:mentis_math/complement/view/complement_view.dart';
 
 /// {@template complement_page}
 /// A [StatelessWidget] which is responsible for providing a
@@ -14,7 +14,7 @@ class ComplementPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => ComplementCubit(),
+      create: (_) => ComplementCubit(context),
       child: const ComplementView(),
     );
   }

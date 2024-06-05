@@ -1,6 +1,6 @@
 {
-    "name": "mental_math",
-    "short_name": "mental_math",
+    "name": "mentis_math",
+    "short_name": "mentis_math",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

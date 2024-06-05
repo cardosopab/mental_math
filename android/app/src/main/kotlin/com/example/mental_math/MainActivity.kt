@@ -1,4 +1,4 @@
-package com.example.mental_math
+package com.example.mentis_math
 
 import io.flutter.embedding.android.FlutterActivity
 

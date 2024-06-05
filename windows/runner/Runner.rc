@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "mental_math" "\0"
+            VALUE "FileDescription", "mentis_math" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "mental_math" "\0"
+            VALUE "InternalName", "mentis_math" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "mental_math.exe" "\0"
-            VALUE "ProductName", "mental_math" "\0"
+            VALUE "OriginalFilename", "mentis_math.exe" "\0"
+            VALUE "ProductName", "mentis_math" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
